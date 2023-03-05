@@ -1,0 +1,27 @@
+<body>
+    <app-navigationbar></app-navigationbar>
+
+    <div class="box" *ngIf = !isMobileResolution>
+        <p class="title">THE TECHNOLOGY</p>
+        <p class="date">Raoul Sanches, February 10th 2023</p>
+        <p class="text">
+            {{ info_line1 }}
+        </p>
+        <p  class="centered_img">
+            <img src = "assets/Images/operating_principle.png" alt="operating_principle" width="100%" class="image_border">
+        </p>
+    </div>
+
+    <div class="mobilebox" *ngIf = isMobileResolution>
+        <p class="mobiletitle">THE TECHNOLOGY</p>
+        <p class="mobiledate">Raoul Sanches, February 10th 2023</p>
+        <p class="mobiletext">
+            {{ info_line1 }}
+        </p>
+        <p  class="mobile_centered_img">
+            <img src = "assets/Images/operating_principle.png" alt="operating_principle" width="100%" class="image_border">
+        </p>
+    </div>
+
+    <app-bottom></app-bottom>
+</body>

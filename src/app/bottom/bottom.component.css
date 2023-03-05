@@ -1,0 +1,61 @@
+.blackbox {
+    /* height:200px; */
+    width:100%;
+    border-collapse: collapse;
+    background-color: black;
+}
+
+.tableclass {
+    padding-top:3%;
+    padding-left:3%;
+    padding-right:3%;
+    padding-bottom:1%;
+    width:100%;
+}
+
+.blackbox_title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom:10px;
+    color: white;
+}
+
+.spacer {
+    height:300px;
+    width:100%;
+}
+
+.blackbox_component {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    float:left;
+    color: white;
+}
+
+.blackbox_small {
+    color: gray;
+    font-size:15px;
+    font-family: Arial, Helvetica, sans-serif;
+    float:left;
+    padding-top:20px;
+}
+
+.logo {
+    width:50px;
+    height:50px;
+    padding-right:10px;
+}
+
+.original_img {
+        position:absolute;
+}
+
+.hover_img {
+    position:absolute;
+}
+
+.original_img:hover {
+    opacity:0;
+}
+

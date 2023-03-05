@@ -1,0 +1,28 @@
+<body>
+    <app-navigationbar></app-navigationbar>
+    <div class="box" *ngIf = !isMobileResolution>
+        <p class="title"> ABOUT US</p>
+        <p class="text">
+            Team Therosel is a TU/e based team focused on the topic of thermochemical energy storage. 
+            We provide a free-to-use online dashboard that helps homeowners explore what effect thermochemical
+            energy storage can have on their home. We were started in 2021 as an Honors team with four
+            students. In addition to this dashboard, we collect the latest innovation in the field of thermochemical
+            energy storage.
+    
+        </p>
+    </div>
+
+    <div class="mobilebox" *ngIf = isMobileResolution>
+        <p class="mobiletitle"> ABOUT US</p>
+        <p class="mobiletext">
+            Team Therosel is a TU/e based team focused on the topic of thermochemical energy storage. 
+            We provide a free-to-use online dashboard that helps homeowners explore what effect thermochemical
+            energy storage can have on their home. We were started in 2021 as an Honors team with four
+            students. In addition to this dashboard, we collect the latest innovation in the field of thermochemical
+            energy storage.
+    
+        </p>
+    </div>
+
+    <app-bottom></app-bottom>
+</body>

@@ -1,0 +1,115 @@
+.title {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    padding:20px;
+    padding-bottom:0px;
+    margin:0px;
+}
+
+.mobiletitle {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top:5px;
+    margin-bottom:10px;
+}
+
+.text {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin:20px;
+    margin-top:5px;
+}
+
+.mobiletext {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.date {
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:20px;
+    margin:0px;
+    font-weight:bold;
+}
+
+.mobiledate {
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:15px;
+    margin:0px;
+    font-weight:bold;
+}
+
+.question {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight:bold;
+    margin:20px;
+    margin-bottom:5px;
+}
+
+.answer {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin:10px;
+    margin-left:40px;
+}
+
+.button {
+    background-color:rgb(164,31,34);
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display:inline-block;
+    font-size:16px;
+    margin: 20px;
+    border-radius: 8px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    box-shadow: -5px -5px 10px rgba(0,0,0,0.2), 5px 5px 10px rgba(0,0,0,0.2) ;
+}
+
+.button:hover {
+    background-color:white;
+    color:black;
+}
+
+.box {
+    margin:50px;
+    background-color: white;
+    box-shadow: -5px -5px 20px rgba(0,0,0,0.5), 5px 5px 20px rgba(0,0,0,0.5) ;
+    /* border:20px; */
+    border-radius:8px;
+
+}
+
+.mobilebox {
+    margin:20px;
+}
+
+.background_img {
+    background-image:url("src/assets/Images/house_sketch.png");
+    background-repeat: no-repeat;
+} 
+
+a {
+    color:black;
+    text-decoration: none;
+}
+
+a:hover {
+    color:rgb(164,31,34);
+    /* font-weight:bold; */
+    text-decoration:underline
+}

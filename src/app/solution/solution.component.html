@@ -1,0 +1,20 @@
+<body class="background_img">
+    <app-navigationbar></app-navigationbar>
+
+    <div class="box" *ngIf = !isMobileResolution>
+        <p class="title">YOUR SOLUTION</p>
+        <p class="text"> 
+            {{ info }}
+        </p>
+        <p><a class="button" routerLink="/questions" routerLinkActive="active" ariaCurrentWhenActive="page">EXPERIENCE →</a></p>
+    </div>
+
+    <div class="mobilebox" *ngIf = isMobileResolution>
+        <p class="mobiletitle">YOUR SOLUTION</p>
+        <p class="mobiletext"> 
+            {{ info }}
+        </p>
+    </div>
+
+    <app-bottom></app-bottom>
+</body>

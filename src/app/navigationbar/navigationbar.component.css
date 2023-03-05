@@ -1,0 +1,136 @@
+@keyframes box {
+    from {transform:translateY(0px)}
+    to {transform:translateY(500px)}
+}
+
+/* @keyframes boxreverse {
+    from {transform:translateY(400px)}
+    to {transform:translateY(0px)}
+} */
+
+.navbarbox {
+    margin:0;
+    /* width:35%; */
+    padding-left:3%;
+    padding-right:3%;
+    float: left;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:25px;
+    text-indent:10%;
+    font-weight:bold;
+    padding-top: 15px;
+    padding-bottom:15px;
+}
+
+.navbarboxright {
+    float:right;
+    height:5%;
+    width:70%;
+}
+
+.navbarspacing {
+    width:35%;
+    padding-top:100px;
+    display: inline-block;
+}
+
+.navbarmenu {
+    padding-top:50px;
+    padding-right:30px;
+    width:10%;
+    float:right;
+}
+
+.navbartext {
+    margin:0;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:20px;
+    float: right;
+    color: white;
+    text-decoration: none;
+    padding-right:5%;
+    text-align: center;
+    font-weight:bold;
+    padding-top: 50px;
+    /* padding-bottom:50px; */
+}
+
+.navbarfolder:hover .dropbar {
+    display:block;
+}
+
+.navbar {
+    margin:0;
+    width: 100%;
+    overflow:auto;
+    /* animation-name: box;
+    animation-duration: 4s; */
+}
+
+.dropbar {
+    position:absolute;
+    /* height:500px; */
+    width:100%;
+    top:-500px;
+    animation-name:box;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    background-color: rgba(0,0,0,0.9);
+    /* box-shadow: 20px 50px 50px rgba(0,0,0,0.9), -20px 50px 50px rgba(0,0,0,0.9); */
+    /* border-bottom:2px solid; */
+    /* border-color: rgba(161,31,34,0.9); */
+}
+
+.dropbartext {
+    color:white;
+    /* background-color: black; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:20px;
+    font-weight:bold;
+    text-align:center;
+    list-style:none;
+    padding-top:3%;   
+    padding-bottom:3%;
+}
+
+.dropbarbottom {
+    padding-bottom:9%;
+}
+
+.dropbarlogo {
+    /* background-color: black; */
+    text-align:center;
+    padding-top:5%;
+    padding-bottom:5%;
+}
+
+.dropbar:hover {
+    animation-fill-mode: forwards;
+    /* animation-name:boxreverse */
+}
+
+.spacer {
+    height:40px;
+    width:100%;
+}
+
+.mobile_spacer {
+    height:20px;
+    width:100%;
+}
+
+a {
+    color:white;
+    text-decoration: none;
+}
+
+a:hover {
+    color:rgb(164,31,34)
+}
+
+.background_img {
+    position:absolute;
+    opacity: 0.5;
+}

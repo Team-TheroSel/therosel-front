@@ -1,0 +1,27 @@
+<div class="navbar" *ngIf="!isMobileResolution">
+    <div class="navbarbox"><a routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page"><img src = 'assets/Images/therosel-white.png' alt="logo" width="150px"></a></div>
+    <div class="navbarboxright">
+        <div class="navbartext"><a routerLink="/contact" routerLinkActive="active" ariaCurrentWhenActive="page"> CONTACT </a></div>
+        <div class="navbartext"> <a routerLink="/about-us" routerLinkActive="active" ariaCurrentWhenActive="page"> ABOUT US </a></div>
+        <div class="navbartext"><a routerLink="/technology" routerLinkActive="active" ariaCurrentWhenActive="page"> THE TECHNOLOGY </a></div>
+        <div class="navbartext"><a routerLink="/solution" routerLinkActive="active" ariaCurrentWhenActive="page"> YOUR SOLUTION </a></div>
+    </div>
+    <div class="spacer"></div>
+</div>
+
+<div class="dropbar" *ngIf="isShowing" #dropbar>
+    <!-- <p>
+        <img src="assets/Images/therosel-white.png" alt="house_sketch" width="100%" class="background_img" *ngIf = isMobileResolution>
+    </p> -->
+    <li class="dropbarlogo"><a routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page"><img src = 'assets/Images/therosel-white.png' alt="logo" width="150px"></a></li>
+    <li class="dropbartext"><a routerLink="/solution" routerLinkActive="active" ariaCurrentWhenActive="page"> YOUR SOLUTION </a></li>
+    <li class="dropbartext"><a routerLink="/technology" routerLinkActive="active" ariaCurrentWhenActive="page"> THE TECHNOLOGY </a></li>
+    <li class="dropbartext"><a routerLink="/about-us" routerLinkActive="active" ariaCurrentWhenActive="page"> ABOUT US </a></li>
+    <li class="dropbartext dropbarbottom"><a routerLink="/contact" routerLinkActive="active" ariaCurrentWhenActive="page"> CONTACT </a></li>
+</div>
+
+<div class="navbar" *ngIf="isMobileResolution">
+    <div class="navbarbox"><a routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page"><img src = 'assets/Images/therosel-white.png' alt="logo" width="150px"></a></div>
+    <div class="navbarmenu "><img #toggleMenu id="menu" (click)="toggleNavbar()" src = 'assets/Images/menu.png' alt="menu" width="40px"></div>
+    <div class="mobile_spacer"></div>
+</div>

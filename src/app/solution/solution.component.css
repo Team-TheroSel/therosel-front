@@ -1,0 +1,78 @@
+.title {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    margin:20px;
+}
+
+.mobiletitle {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top:5px;
+    margin-bottom:10px;
+}
+
+.text {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin:20px;
+}
+
+.mobiletext {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.date {
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:20px;
+    margin:0px;
+    font-weight:bold;
+}
+
+.mobiledate {
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:15px;
+    margin:0px;
+    font-weight:bold;
+}
+
+.button {
+    background-color:rgb(164,31,34);
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display:inline-block;
+    font-size:16px;
+    margin: 20px;
+    border-radius: 8px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    box-shadow: -5px -5px 10px rgba(0,0,0,0.2), 5px 5px 10px rgba(0,0,0,0.2) ;
+}
+
+.button:hover {
+    background-color:white;
+    color:black;
+}
+
+.box {
+    margin:50px;
+}
+
+.mobilebox {
+    margin:20px;
+}
+
+.background_img {
+    background-image:url("src/assets/Images/house_sketch.png");
+}   

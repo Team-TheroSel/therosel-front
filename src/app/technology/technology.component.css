@@ -1,0 +1,75 @@
+.title {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    margin:20px;
+}
+
+.mobiletitle {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top:5px;
+    margin-bottom:10px;
+    margin-left:10px;
+}
+
+.text {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin:20px;
+}
+
+.mobiletext {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin:10px;
+}
+
+.date {
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:20px;
+    margin:20px;
+    font-weight:bold;
+}
+
+.mobiledate {
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:15px;
+    margin:10px;
+    font-weight:bold;
+}
+
+.centered_img {
+    width:50%;
+    margin-top:50px;
+    margin-bottom:50px;
+    margin-left:auto;
+    margin-right:auto;
+    }
+
+.mobile_centered_img {
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.image_border {
+    box-shadow: -5px -5px 20px rgba(0,0,0,0.5), 5px 5px 20px rgba(0,0,0,0.5) ;
+}
+
+.box {
+    margin:50px;
+}
+
+.mobilebox {
+    margin:20px;
+}

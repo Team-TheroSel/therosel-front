@@ -1,0 +1,24 @@
+<body>
+
+    <app-navigationbar></app-navigationbar>
+
+    <div class="box" *ngIf = !isMobileResolution>
+        <p class="news">RECENT NEWS</p>
+        <p class="date">February 23, 2023</p>
+        <p class="title">WELCOME TO OUR NEW WEBSITE</p>
+        <p class="text">
+            {{ news1 }}
+        </p>
+    </div>
+
+    <div class="mobilebox" *ngIf = isMobileResolution>
+        <p class="mobilenews">RECENT NEWS</p>
+        <p class="mobiledate">February 23, 2023</p>
+        <p class="mobiletitle" [ngClass] = "{'mobiletitle': isMobileResolution}">WELCOME TO OUR NEW WEBSITE</p>
+        <p class="mobiletext">
+            {{ news1 }}
+        </p>
+    </div>
+    <app-bottom></app-bottom>
+
+</body>

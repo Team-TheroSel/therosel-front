@@ -1,0 +1,13 @@
+<body>
+    <app-navigationbar></app-navigationbar>
+
+    <div class="box" *ngIf = !isMobileResolution>
+        <p class="title">CONTACT INFORMATION</p>
+    </div>
+
+    <div class="mobilebox" *ngIf = isMobileResolution>
+        <p class="mobiletitle">CONTACT INFORMATION</p>
+    </div>
+
+    <app-bottom></app-bottom>
+</body>
