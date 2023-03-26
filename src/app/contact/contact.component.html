@@ -3,6 +3,22 @@
 
     <div class="box" *ngIf = !isMobileResolution>
         <p class="title">CONTACT INFORMATION</p>
+        <p class="text"> {{ contactline }}</p>
+        <table>
+            <tr>
+                <td class="contactelement symbol">
+                    <img src="assets/Images/email_red.png" alt="email_red" width="100px" class="hover_img">
+                    <a> 
+                        <img src="assets/Images/email_white.png" alt="email_white" width="100px" class="original_img">
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td class="contactelement">
+                    teamtherosel@<div class="hiddentext">randomtext</div>gmail.com
+                </td>
+            </tr>
+        </table>
     </div>
 
     <div class="mobilebox" *ngIf = isMobileResolution>
