@@ -2,26 +2,191 @@
     <app-navigationbar></app-navigationbar>
     <div class="box" *ngIf = !isMobileResolution>
         <p class="title"> ABOUT US</p>
+        <br>
+        <p class="text2">Story</p>
         <p class="text">
-            Team Therosel is a TU/e based team focused on the topic of thermochemical energy storage. 
-            We provide a free-to-use online dashboard that helps homeowners explore what effect thermochemical
-            energy storage can have on their home. We were started in 2021 as an Honors team with four
-            students. In addition to this dashboard, we collect the latest innovation in the field of thermochemical
-            energy storage.
-    
+            {{ line1 }}
         </p>
+        <br>
+        <p class="text2">Mission</p>
+        <p class = "text">
+            {{ line2 }}
+        </p>
+        <br>
+        <p class="text2">The team</p>
+        <br>
+        <table>
+            <tr>
+                <td class="profilebox text">
+                    <div class="margin">
+                        <img src="assets/Images/Photo_website_Raoul_round.png" alt="picture_raoul" width="200px">
+                        <p>
+                            Raoul Sanches - Chairman
+                        </p>
+                        <p>
+                            {{ info_raoul }}
+                        </p>
+                        <p class="italic">
+                            {{ text_raoul }}
+                        </p>
+                    </div>
+                </td>
+                <td class="profilebox text">
+                    <div class="margin">
+                        <img src="assets/Images/Photo_website_Vicky_round.png" alt="picture_jasmine" width="200px" class="photo">
+                        <p>
+                            Jasmine Frijters - Secretary
+                        </p>
+                        <p>
+                            {{ info_jasmine }}
+                        </p>
+                        <p class="italic">
+                            {{ text_jasmine }}
+                        </p>
+                    </div>
+                </td>
+                <td class="profilebox text">
+                    <div class="margin">
+                        <img src="assets/Images/Photo_website_Vicky_round.png" alt="picture_vicky" width="200px" class="photo">
+                        <p>
+                            Vicky Hüfken - Internal Relations
+                        </p>
+                        <p>
+                            {{ info_vicky }}
+                        </p>
+                        <p class="italic">
+                            {{ text_vicky }}
+                        </p>
+                    </div>
+                </td>
+                <td class="profilebox text">
+                    <div class="margin">
+                        <img src="assets/Images/Photo_website_Lars_round.png" alt="picture_lars" width="200px" class="photo">
+                        <p>
+                            Lars ten Hacken - External Relations
+                        </p>
+                        <p>
+                            {{ info_lars }}
+                        </p>
+                        <p class="italic">
+                            {{ text_lars }}
+                        </p>
+                    </div>
+                </td>
+                <td class="profilebox text">
+                    <div class="margin">
+                        <img src="assets/Images/Photo_website_Nipun_round.png" alt="picture_nipun" width="200px" class="photo">
+                        <p>
+                            Nipun Kaushik - External Relations
+                        </p>
+                        <p>
+                            {{ info_nipun }}
+                        </p>
+                        <p class="italic">
+                            {{ text_nipun }}
+                        </p>
+                    </div>
+                </td>
+            </tr>
+        </table>
     </div>
 
     <div class="mobilebox" *ngIf = isMobileResolution>
         <p class="mobiletitle"> ABOUT US</p>
+        <br>
+        <p class="mobiletext2">Story</p>
         <p class="mobiletext">
-            Team Therosel is a TU/e based team focused on the topic of thermochemical energy storage. 
-            We provide a free-to-use online dashboard that helps homeowners explore what effect thermochemical
-            energy storage can have on their home. We were started in 2021 as an Honors team with four
-            students. In addition to this dashboard, we collect the latest innovation in the field of thermochemical
-            energy storage.
-    
+            {{ line1 }}
         </p>
+        <br>
+        <p class="mobiletext2">Mission</p>
+        <p class = "mobiletext">
+            {{ line2 }}
+        </p>
+        <br>
+        <p class="mobiletext2">The team</p>
+        <table class="nomargin fullwidth">
+            <tr>
+                <td class="mobileprofilebox mobiletext">
+                    <div class="margin">
+                        <img src="assets/Images/Photo_website_Raoul_round.png" alt="picture_raoul" width="80%">
+                        <p>
+                            Raoul Sanches - Chairman
+                        </p>
+                        <p>
+                            {{ info_raoul }}
+                        </p>
+                        <p class="italic">
+                            {{ text_raoul }}
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="profilebox mobiletext">
+                    <div class="margin">
+                        <img src="assets/Images/Photo_website_Vicky_round.png" alt="picture_jasmine" width="200px" class="photo">
+                        <p>
+                            Jasmine Frijters - Secretary
+                        </p>
+                        <p>
+                            {{ info_jasmine }}
+                        </p>
+                        <p class="italic">
+                            {{ text_jasmine }}
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="profilebox mobiletext">
+                    <div class="margin">
+                        <img src="assets/Images/Photo_website_Vicky_round.png" alt="picture_vicky" width="200px" class="photo">
+                        <p>
+                            Vicky Hüfken - Internal Relations
+                        </p>
+                        <p>
+                            {{ info_vicky }}
+                        </p>
+                        <p class="italic">
+                            {{ text_vicky }}
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="profilebox mobiletext">
+                    <div class="margin">
+                        <img src="assets/Images/Photo_website_Lars_round.png" alt="picture_lars" width="200px" class="photo">
+                        <p>
+                            Lars ten Hacken - External Relations
+                        </p>
+                        <p>
+                            {{ info_lars }}
+                        </p>
+                        <p class="italic">
+                            {{ text_lars }}
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="profilebox mobiletext">
+                    <div class="margin">
+                        <img src="assets/Images/Photo_website_Nipun_round.png" alt="picture_nipun" width="200px" class="photo">
+                        <p>
+                            Nipun Kaushik - External Relations
+                        </p>
+                        <p>
+                            {{ info_nipun }}
+                        </p>
+                        <p class="italic">
+                            {{ text_nipun }}
+                        </p>
+                    </div>
+                </td>
+            </tr>
+        </table>
     </div>
 
     <app-bottom></app-bottom>
