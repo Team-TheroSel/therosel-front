@@ -10,6 +10,30 @@ export class AboutusComponent {
 
   public isMobileResolution: boolean;
 
+  line1: String = "In September 2021, as part of the Energy Transition track of the Honors Academy, we formed a team dedicated to the heat transition. As honors bachelor students, we wanted to make heating more sustainable and have an impact on the energy transition. By sharing our common ambition, we created the team TheroSel, focusing on storing heat in a thermochemical material. A heat battery is a material that stores thermal energy. This would allow us to store heat when in abundance and retrieve heat when necessary. Making us less dependent on unsustainable heat sources such as gas and making it more efficient as storing it in water as it can store heat for longer. The team consists of five members, from three different backgrounds. This diversity allows us to combine our different knowledge and skill sets into the project.";
+
+  line2: String = "Heat batteries are becoming a reality and are needed for the energy transition. To create this transition we need people that want to adapt. In the early stages of the team, we are focused on presenting this technology to the public. The public needs to be aware of this technology, its (dis)advantages, costs and applicability. That is where we come in. The purpose of this team is to provide the public with the right knowledge and a tool to check the applicability of this technology in everyone's personal situation. Hopefully you will stay as excited as we are about this technology!";
+
+  info_raoul: String = "Third year Honors Bachelor student Applied Physics TU/e";
+
+  text_raoul: String = "'I hope to work towards a sustainable future in which there are no more worries for a loss of quality of life for the next generation.'"
+
+  info_vicky: String = "Third year Honors Bachelor student Mechanical Engineering TU/e";
+
+  text_vicky: String = "'I hope to work towards a sustainable future in which there are no more worries for a loss of quality of life for the next generation.'";
+
+  info_nipun: String = "Third year Honors Bachelor student Automotive Technology TU/e"
+
+  text_nipun: String = "'I hope to work towards a sustainable future in which there are no more worries for a loss of quality of life for the next generation.'";
+
+  info_jasmine: String = "Third year Honors Bachelor student Applied Physics TU/e";
+
+  text_jasmine: String = "'I hope to work towards a sustainable future in which there are no more worries for a loss of quality of life for the next generation.'";
+
+  info_lars: String = "Third year Honors Bachelor student Applied Physics TU/e";
+
+  text_lars: String = "'I hope to work towards a sustainable future in which there are no more worries for a loss of quality of life for the next generation.'";
+
   constructor(private applicationStateService: ApplicationStateService) {
     this.isMobileResolution = 
     applicationStateService.getIsMobileResolution();
