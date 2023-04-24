@@ -6,24 +6,68 @@
         <p class="text"> {{ contactline }}</p>
         <table>
             <tr>
-                <td class="contactelement symbol">
-                    <img src="assets/Images/email_red.png" alt="email_red" width="100px" class="hover_img">
-                    <a> 
-                        <img src="assets/Images/email_white.png" alt="email_white" width="100px" class="original_img">
-                    </a>
+                <td class="contactelement">
+                    <div class="symbol">
+                        <img src="assets/Images/email_red.png" alt="email_red" width="100px" class="hover_img">
+                        <a> 
+                            <img src="assets/Images/email_white.png" alt="email_white" width="100px" class="original_img">
+                        </a>
+                    </div>
+                    <div>
+                        teamtherosel@<div class="hiddentext">randomtext</div>gmail.com
+                    </div>
+                </td>
+                <td class="contactelement">
+                    <div class="symbol">
+                        <img src="assets/Images/linkedin_red.png" alt="linkedin_red_large" width="100px" class="hover_img">
+                        <a href="https://www.linkedin.com/company/therosel/" target="_blank">
+                            <img src="assets/Images/linkedin_white.png" alt="linkedin_white_large" width="100px" class="original_img">
+                        </a>
+                    </div>
+                    
+                    <div>
+                        TheroSel
+                    </div>
                 </td>
             </tr>
-            <tr>
-                <td class="contactelement">
-                    teamtherosel@<div class="hiddentext">randomtext</div>gmail.com
-                </td>
+            <tr class="contactelement">
             </tr>
         </table>
     </div>
 
     <div class="mobilebox" *ngIf = isMobileResolution>
         <p class="mobiletitle">CONTACT INFORMATION</p>
+        <p class="mobiletext">{{ contactline }}</p>
+        <table>
+            <tr>
+                <td>
+                    <div class="centering">
+                        <img src="assets/Images/email_white.png" alt="email_white" width="45%">
+                    </div>
+                    <br>
+                    <div class="mobiletext centering">
+                        teamtherosel@<div class="hiddentext">randomtext</div>gmail.com
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <br>
+                <br>
+            </tr>
+            <tr>
+                <td>
+                    <div class="centering">
+                        <a href="https://www.linkedin.com/company/therosel/" target="_blank"    >
+                            <img src="assets/Images/linkedin_white.png" alt="linkedin_white" width="40%">
+                        </a>
+                    </div>
+                    <br>
+                    <div class="mobiletext centering">
+                        TheroSel
+                    </div>
+                </td>
+            </tr>
+        </table>
     </div>
-
     <app-bottom></app-bottom>
 </body>
