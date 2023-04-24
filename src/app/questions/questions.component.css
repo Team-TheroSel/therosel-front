@@ -9,12 +9,12 @@
 }
 
 .mobiletitle {
-    color: white;
+    color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
     font-weight: bold;
-    margin-top:5px;
-    margin-bottom:10px;
+    padding:10px;
+    padding-bottom:0px;
 }
 
 .text {
@@ -26,9 +26,11 @@
 }
 
 .mobiletext {
-    color: white;
+    color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
+    padding:10px;
+    padding-top:0px;
 }
 
 .date {
@@ -56,12 +58,28 @@
     margin-bottom:5px;
 }
 
+.mobilequestion {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight:bold;
+    margin:20px;
+    margin-bottom:5px;
+}
+
 .answer {
     color: black;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size:16px;
     margin:10px;
     margin-left:40px;
+}
+
+.mobileanswer {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin:25px;
 }
 
 .button {
@@ -88,14 +106,16 @@
 .box {
     margin:50px;
     background-color: white;
-    box-shadow: -5px -5px 20px rgba(0,0,0,0.5), 5px 5px 20px rgba(0,0,0,0.5) ;
+    box-shadow: -5px -5px 20px rgba(0,0,0,0.5), 5px 5px 20px rgba(0,0,0,0.5);
     /* border:20px; */
     border-radius:8px;
-
 }
 
 .mobilebox {
     margin:20px;
+    background-color:white;
+    box-shadow: -5px -5px 20px rgba(0,0,0,0.5), 5px 5px 20px rgba(0,0,0,0.5);
+    border-radius:8px;
 }
 
 .background_img {
@@ -111,5 +131,10 @@ a {
 a:hover {
     color:rgb(164,31,34);
     /* font-weight:bold; */
+    text-decoration:underline
+}
+
+.redtext {
+    color:rgb(164,31,34);
     text-decoration:underline
 }
