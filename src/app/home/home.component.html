@@ -1,23 +1,130 @@
 <body>
-
     <app-navigationbar></app-navigationbar>
 
     <div class="box" *ngIf = !isMobileResolution>
-        <p class="news">RECENT NEWS</p>
-        <p class="date">February 23, 2023</p>
-        <p class="title">WELCOME TO OUR NEW WEBSITE</p>
-        <p class="text">
-            {{ news1 }}
-        </p>
+        <div class="small-spacer"></div>
+        <div class="typewriter">
+            <div class="container">
+                <div class="typed-out">
+                    What is a heat battery?
+                </div>
+                <div class="typed-out animation-delay-4s">
+                    How can I use a heat battery to heat my home?
+                </div>
+                <div class="typed-out animation-delay-8s">
+                    What makes a heat battery so efficient?
+                </div>
+                <div class="typed-out animation-delay-12s">
+                    How do heat batteries revolutionize sustainability?
+                </div>
+                <div class="typed-out animation-delay-16s">
+                    What does the future of heat batteries look like?
+                </div>
+            </div>
+        </div>
+        <div class="slogan-text">Engaging people with new technologies. An easy-to-use tool to show the potential of a heat battery in your home.</div>
+        <p class="centering"><button (click)="scrollDown()" class="button" >EXPLORE MY OPTIONS</button></p>
+        <div class="spacer"></div>
+
+
+        <div>
+            <div class="buttons_overview" id="page-1">
+                <br>
+                <br>
+                <p class="title"> Explore what heat batteries have to offer</p>
+                <br>
+                <p class="bordered text"> Explore what heat batteries have to offer by reading about how the technology works, seeing what the future holds for heat batteries, and some of the answers to frequently asked questions on heat battery technology.</p>
+                <br>
+                <br>
+                <table class="center_table">
+                    <td>
+                        <a class= "button" routerLink="/technology" routerLinkActive="active" ariaCurrentWhenActive="page">TECHNOLOGY</a>
+                    </td>
+                    <td>
+                        <a class="button" routerLink="/solution" routerLinkActive="active" ariaCurrentWhenActive="page">FUTURE</a>
+                    </td>
+                    <td>
+                        <a class="button" routerLink="/about-us" routerLinkActive="active" ariaCurrentWhenActive="page" href="">FAQ</a>
+                    </td>
+                </table>
+                <br>
+                <br>
+            </div>
+        </div>
+
+        <div>
+            <div id="page-2">
+                <p class="news">RECENT NEWS</p>
+                <p class="date">February 23, 2023</p>
+                <p class="title">WELCOME TO OUR NEW WEBSITE</p>
+                <p class="text">
+                    {{ news1 }}
+                </p>
+            </div>
+        </div>
     </div>
 
     <div class="mobilebox" *ngIf = isMobileResolution>
-        <p class="mobilenews">RECENT NEWS</p>
-        <p class="mobiledate">February 23, 2023</p>
-        <p class="mobiletitle" [ngClass] = "{'mobiletitle': isMobileResolution}">WELCOME TO OUR NEW WEBSITE</p>
-        <p class="mobiletext">
-            {{ news1 }}
-        </p>
+
+        <div class="small-spacer"></div>
+        <div class="typewriter-mobile">
+            <div class="container">
+                <div class="typed-out-mobile">
+                    What is a heat battery?
+                </div>
+                <div class="typed-out-mobile animation-delay-4s">
+                    How can I use a heat battery to heat my home?
+                </div>
+                <div class="typed-out-mobile animation-delay-8s">
+                    What makes a heat battery so efficient?
+                </div>
+                <div class="typed-out-mobile animation-delay-12s">
+                    How do heat batteries revolutionize sustainability?
+                </div>
+                <div class="typed-out-mobile animation-delay-16s">
+                    What does the future of heat batteries look like?
+                </div>
+            </div>
+        </div>
+        <div class="slogan-text-mobile">Engaging people with new technologies. An easy-to-use tool to show the potential of a heat battery in your home.</div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+        <div>
+            <div class="mobile-buttons_overview" id="page-1-mobile">
+                <br>
+                <br>
+                <p class="mobiletitle"> Explore what heat batteries have to offer</p>
+                <br>
+                <p class="mobile-bordered mobiletext"> Explore what heat batteries have to offer by reading about how the technology works, seeing what the future holds for heat batteries, and some of the answers to frequently asked questions on heat battery technology.</p>
+
+                <table class="center_table">
+                    <td>
+                        <a class= "mobile-button" routerLink="/technology" routerLinkActive="active" ariaCurrentWhenActive="page">TECHNOLOGY</a>
+                    </td>
+                    <td>
+                        <a class="mobile-button" routerLink="/solution" routerLinkActive="active" ariaCurrentWhenActive="page">FUTURE</a>
+                    </td>
+                    <td>
+                        <a class="mobile-button" routerLink="/about-us" routerLinkActive="active" ariaCurrentWhenActive="page" href="">FAQ</a>
+                    </td>
+                </table>
+                <br>
+                <br>
+            </div>
+        </div>
+        <div id="page-2-mobile">
+            <p class="mobilenews">RECENT NEWS</p>
+            <p class="mobiledate">February 23, 2023</p>
+            <p class="mobiletitle" [ngClass] = "{'mobiletitle': isMobileResolution}">WELCOME TO OUR NEW WEBSITE</p>
+            <p class="mobiletext">
+                {{ news1 }}
+            </p>
+        </div>
     </div>
     <app-bottom></app-bottom>
 

@@ -15,6 +15,15 @@ export class HomeComponent {
   constructor(private applicationStateService: ApplicationStateService) {
     this.isMobileResolution = 
     applicationStateService.getIsMobileResolution();
+    
+  }
+
+  scrollDown(): void {
+    document.getElementById("page-1")?.scrollIntoView({behavior:"smooth"})
+  }
+
+  scrollDownMobile(): void {
+    document.getElementById("page-1-mobile")?.scrollIntoView({behavior:"smooth"})
   }
 
 }

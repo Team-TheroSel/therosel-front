@@ -1,5 +1,27 @@
+@keyframes smoothscroll1 {
+    from, to { scroll-behavior: smooth; }
+  }
+  
+  @keyframes smoothscroll2 {
+    from, to { scroll-behavior: smooth; }
+  }
+  
+  html {
+    animation: smoothscroll1 1s;
+  }
+  
+  html:focus-within {
+    animation-name: smoothscroll2;
+    scroll-behavior: smooth;
+  }
+
 .spacer {
     height:300px;
+    width:100%;
+}
+
+.small-spacer {
+    height:100px;
     width:100%;
 }
 
@@ -27,6 +49,168 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     margin:20px;
+}
+
+.slogan-text {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:18px;
+    font-style:italic;
+    text-align: center;
+}
+
+.slogan-text-mobile {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:12px;
+    font-style:italic;
+    text-align: center;
+}
+
+.button {
+    background-color:rgb(164,31,34);
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display:inline-block;
+    font-size:16px;
+    margin: 20px;
+    border-radius: 8px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    box-shadow: -5px -5px 10px rgba(0,0,0,0.2), 5px 5px 10px rgba(0,0,0,0.2) ;
+}
+
+.mobile-button {
+    background-color:rgb(164,31,34);
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display:inline-block;
+    font-size:12px;
+    margin: 10px;
+    border-radius: 4px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    box-shadow: -2px -2px 5 rgba(0,0,0,0.2), 2px 2px 5px rgba(0,0,0,0.2) ;
+}
+
+
+
+.button:hover {
+    background-color:white;
+    color:black;
+}
+
+.scroll-smooth {
+    scroll-behavior: smooth;
+  }
+
+.typewriter {
+    text-align:center;
+    height:70px;
+}
+
+.typewriter-mobile {
+    text-align:center;
+    height:40px;
+}
+
+.centering {
+    text-align:center;
+}
+
+
+.container {
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    color:white;
+}
+
+.typed-out {
+    overflow: hidden;
+    white-space: nowrap;
+    animation-name: typing;
+    animation-duration:20s;
+    animation-timing-function: steps(20,end);
+    animation-direction:forward; 
+    animation-iteration-count: infinite;
+    font-size: 3rem;
+    width: 0;
+    height:0;
+}
+
+.typed-out-mobile {
+    overflow: hidden;
+    white-space: nowrap;
+    animation-name: typing;
+    animation-duration:20s;
+    animation-timing-function: steps(20,end);
+    animation-direction:forward; 
+    animation-iteration-count: infinite;
+    font-size: 0.9rem;
+    width: 0;
+    height:0;
+}
+
+.animation-delay-4s {
+    animation-delay:4s;
+}
+
+.animation-delay-8s {
+    animation-delay:8s;
+}
+
+.animation-delay-12s {
+    animation-delay:12s;
+}
+
+.animation-delay-16s {
+    animation-delay:16s;
+}
+
+
+@keyframes typing {
+    0% {
+        width:0;
+        height:100%;
+    }
+
+    0.1% {
+        border-right: .15em solid rgb(164,31,34);
+    }
+
+    6% { 
+        width: 100%
+    }
+
+    8% {
+        width: 100%
+    }
+
+    13.99% {
+        border-right: .15em solid rgb(164,31,34);
+    }
+
+    14% {
+        width:0;
+        border-right:0;
+        height:100%;
+    }
+
+    14.1% {
+        height:0;
+    }
+}
+
+@keyframes reverse_typing {
+    from { width: 100% }
+    to { width: 0 }
 }
 
 .mobiletext {
@@ -72,3 +256,34 @@
     font-size: 25px;
     font-weight:bold;  
 }
+
+.buttons_overview {
+    background-color:rgba(0,0,0,1);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    position:relative;
+    left: -50px;
+    width: calc(100% + 100px)
+}
+
+.mobile-buttons_overview {
+    background-color:rgba(0,0,0,0.5);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    position:relative;
+    left: -20px;
+    width: calc(100% + 40px )
+}
+
+.center_table {
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.mobile-bordered {
+    margin-left:5px;
+    width:95%;
+}
+

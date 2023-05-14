@@ -3,24 +3,44 @@
 
     <div class="box" *ngIf = !isMobileResolution>
         <p class="title">THE TECHNOLOGY</p>
-        <p class="date">Raoul Sanches, February 10th 2023</p>
+        <p class="date">Basic principle</p>
         <p class="text">
-            {{ info_line1 }}
+            {{ basic_principle }}
         </p>
-        <p  class="centered_img">
+        <p class="date">Technological details</p>
+        <p class="text">
+            {{ technological_details }}
+        </p>
+        <div class="text">
+            <p class="underline">Dehydration reaction:</p> {{ dehydration_reaction }}
+        </div>
+        <div class="text">
+            <p class="underline">Hydration reaction:</p> {{ hydration_reaction }}
+        </div>
+        <!-- <p  class="centered_img">
             <img src = "assets/Images/operating_principle.png" alt="operating_principle" width="100%" class="image_border">
-        </p>
+        </p> -->
     </div>
 
     <div class="mobilebox" *ngIf = isMobileResolution>
         <p class="mobiletitle">THE TECHNOLOGY</p>
-        <p class="mobiledate">Raoul Sanches, February 10th 2023</p>
+        <p class="mobiledate">Basic principle</p>
         <p class="mobiletext">
-            {{ info_line1 }}
+            {{ basic_principle }}
         </p>
-        <p  class="mobile_centered_img">
+        <p class="mobiledate">Technological details</p>
+        <p class="mobiletext">
+            {{ technological_details }}
+        </p>
+        <div class="mobiletext">
+            <p class="underline">Dehydration reaction:</p> {{dehydration_reaction }}
+        </div>
+        <div class="mobiletext">
+            <p class="underline">Hydration reaction:</p> {{ hydration_reaction }}
+        </div>
+        <!-- <p  class="mobile_centered_img">
             <img src = "assets/Images/operating_principle.png" alt="operating_principle" width="100%" class="image_border">
-        </p>
+        </p> -->
     </div>
 
     <app-bottom></app-bottom>

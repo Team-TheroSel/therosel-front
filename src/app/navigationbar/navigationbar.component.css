@@ -3,6 +3,11 @@
     to {transform:translateY(500px)}
 }
 
+@keyframes largebox {
+    from {opacity:0;}
+    to {opacity:1;}
+}
+
 /* @keyframes boxreverse {
     from {transform:translateY(400px)}
     to {transform:translateY(0px)}
@@ -48,7 +53,6 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size:20px;
     float: right;
-    color: white;
     text-decoration: none;
     padding-right:5%;
     text-align: center;
@@ -61,6 +65,9 @@
     display:block;
 }
 
+.navbarfolder:hover .background_dropbar {
+    display:block;
+}
 .navbar {
     margin:0;
     width: 100%;
@@ -71,16 +78,23 @@
 
 .dropbar {
     position:absolute;
-    /* height:500px; */
     width:100%;
     top:-500px;
     animation-name:box;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
-    background-color: rgba(0,0,0,0.9);
-    /* box-shadow: 20px 50px 50px rgba(0,0,0,0.9), -20px 50px 50px rgba(0,0,0,0.9); */
-    /* border-bottom:2px solid; */
-    /* border-color: rgba(161,31,34,0.9); */
+    background-color: rgba(0,0,0);
+}
+
+.background_dropbar {
+    height:100vh;
+    position:absolute;
+    width:100%;
+    animation-name:largebox;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    /* background: rgba(0,0,0,0.3); */
+    background: linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%);
 }
 
 .dropbartext {
