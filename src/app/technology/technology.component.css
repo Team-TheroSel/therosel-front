@@ -30,6 +30,11 @@
     margin:10px;
 }
 
+.underline {
+    text-decoration:underline;
+    margin-bottom:5px;
+}
+
 .date {
     color: gray;
     font-family: Arial, Helvetica, sans-serif;

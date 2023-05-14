@@ -20,19 +20,19 @@ export class AboutusComponent {
 
   info_vicky: String = "Third year Honors Bachelor student Mechanical Engineering TU/e";
 
-  text_vicky: String = "'I hope to work towards a sustainable future in which there are no more worries for a loss of quality of life for the next generation.'";
+  text_vicky: String = "'I work towards creating a sustainable future, where renewable energy powers our world, ecosystems thrive, and every individual embraces eco-conscious choices for the well-being of our planet.'";
 
   info_nipun: String = "Third year Honors Bachelor student Automotive Technology TU/e"
 
-  text_nipun: String = "'I hope to work towards a sustainable future in which there are no more worries for a loss of quality of life for the next generation.'";
+  text_nipun: String = "'I dream about a sustainable way of heating homes with heat batteries, storing excess thermal energy and utilizing it when needed, reducing reliance on fossil fuels and promoting energy efficiency for a greener future.'";
 
   info_jasmine: String = "Third year Honors Bachelor student Applied Physics TU/e";
 
-  text_jasmine: String = "'I hope to work towards a sustainable future in which there are no more worries for a loss of quality of life for the next generation.'";
+  text_jasmine: String = "'I want to live in a world where sustainable practices are the norm, where clean energy powers our lives, and harmony with nature shapes our every decision, ensuring a thriving and resilient future for all.'";
 
   info_lars: String = "Third year Honors Bachelor student Applied Physics TU/e";
 
-  text_lars: String = "'I hope to work towards a sustainable future in which there are no more worries for a loss of quality of life for the next generation.'";
+  text_lars: String = "'I want to live in a world where sustainability is at the heart of everything we do, and our actions reflect our commitment to creating a greener, healthier, and more equitable future for all.'";
 
   constructor(private applicationStateService: ApplicationStateService) {
     this.isMobileResolution = 

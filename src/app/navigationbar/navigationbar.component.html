@@ -9,6 +9,9 @@
     <div class="spacer"></div>
 </div>
 
+<div class="background_dropbar" *ngIf="isShowing" #background_dropbar>
+</div>
+
 <div class="dropbar" *ngIf="isShowing" #dropbar>
     <!-- <p>
         <img src="assets/Images/therosel-white.png" alt="house_sketch" width="100%" class="background_img" *ngIf = isMobileResolution>
@@ -19,6 +22,7 @@
     <li class="dropbartext"><a routerLink="/about-us" routerLinkActive="active" ariaCurrentWhenActive="page"> ABOUT US </a></li>
     <li class="dropbartext dropbarbottom"><a routerLink="/contact" routerLinkActive="active" ariaCurrentWhenActive="page"> CONTACT </a></li>
 </div>
+
 
 <div class="navbar" *ngIf="isMobileResolution">
     <div class="navbarbox"><a routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page"><img src = 'assets/Images/therosel-white.png' alt="logo" width="150px"></a></div>

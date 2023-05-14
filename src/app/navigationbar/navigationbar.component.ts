@@ -9,7 +9,7 @@ import { ApplicationStateService } from '../application-state.service';
 export class NavigationbarComponent {
 
   public isMobileResolution: boolean;
-  isShowing: boolean = false;
+  public isShowing: boolean = false;
 
   @ViewChild('toggleMenu') toggleMenu: ElementRef;
   @ViewChild('dropbar') dropbar: ElementRef;
