@@ -7,7 +7,7 @@
         <p class="text">
             {{ basic_principle }}
         </p>
-        <p class="date">Technological details</p>
+        <p class="date">Technical details</p>
         <p class="text">
             {{ technological_details }}
         </p>
@@ -20,6 +20,50 @@
         <!-- <p  class="centered_img">
             <img src = "assets/Images/operating_principle.png" alt="operating_principle" width="100%" class="image_border">
         </p> -->
+
+        <br>
+        <br>
+        <br>
+
+        <div>
+            <table class="centering">
+               <tr>
+                <td>
+                    <div class="tube">
+                        <div class="tube_content-left"></div>
+                        <div class="arrow">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </td>
+                <td class="battery">
+                    <div class="battery_content-blue"></div>
+                    <div class="battery_content-red"></div>
+                </td>
+                <td>
+                    <div class="tube">
+                        <div class="tube_content-right"></div>
+                        <div class="arrow">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </td>
+               </tr>
+               <tr>
+                <td></td>
+                <td>
+                    <div class="battery_information dehydration">Dehydration</div>
+                    <div class="battery_information hydration">Hydration</div>
+                </td>
+                <td></td>
+               </tr>
+            </table>
+        </div>
+
     </div>
 
     <div class="mobilebox" *ngIf = isMobileResolution>
@@ -28,7 +72,7 @@
         <p class="mobiletext">
             {{ basic_principle }}
         </p>
-        <p class="mobiledate">Technological details</p>
+        <p class="mobiledate">Technical details</p>
         <p class="mobiletext">
             {{ technological_details }}
         </p>
