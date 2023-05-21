@@ -54,12 +54,26 @@
 
         <div>
             <div id="page-2">
-                <p class="news">RECENT NEWS</p>
+                <p class="news">RECENT ARTICLES</p>
                 <p class="date">February 23, 2023</p>
                 <p class="title">WELCOME TO OUR NEW WEBSITE</p>
                 <p class="text">
                     {{ news1 }}
                 </p>
+                <br>
+                <p class="date">February 12, 2023</p>
+                <p class="title">AFFORDABLE HEAT PUMPS FOR A SUSTAINABLE FUTURE</p>
+                <div class="text">
+                    {{ news_affordable_heat_pumps }} <a href="https://www.linkedin.com/feed/update/urn:li:activity:7030647874866544640" class="redtext" target="blank">→ See on LinkedIn</a>
+                </div>
+                <div class="centering">
+                    <img src="https://media.licdn.com/dms/image/sync/D4E27AQEUYuwGcBCz3g/articleshare-shrink_800/0/1683629904508?e=1685311200&v=beta&t=G1Ypmo1an79EEC5ZoaZ2PA312eNPGPV1ubMd-SodnXA" width="700px">
+                </div>
+                <p class="date">January 12, 2023</p>
+                <p class="title">FUTURE OF BUILDING TECHNOLOGY: 2023 AND BEYOND</p>
+                <div class="text">
+                    {{ news_future_building_technology }} <a href="https://www.linkedin.com/feed/update/urn:li:activity:7019251928878456832" class="redtext" target="blank">→ See on LinkedIn</a>
+                </div>
             </div>
         </div>
     </div>
@@ -118,7 +132,7 @@
             </div>
         </div>
         <div id="page-2-mobile">
-            <p class="mobilenews">RECENT NEWS</p>
+            <p class="mobilenews">RECENT ARTICLES</p>
             <p class="mobiledate">February 23, 2023</p>
             <p class="mobiletitle" [ngClass] = "{'mobiletitle': isMobileResolution}">WELCOME TO OUR NEW WEBSITE</p>
             <p class="mobiletext">

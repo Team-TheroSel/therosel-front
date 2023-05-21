@@ -1,10 +1,10 @@
 @keyframes smoothscroll1 {
     from, to { scroll-behavior: smooth; }
-  }
+}
   
   @keyframes smoothscroll2 {
     from, to { scroll-behavior: smooth; }
-  }
+}
   
   html {
     animation: smoothscroll1 1s;
@@ -49,6 +49,7 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     margin:20px;
+    white-space: break-spaces;
 }
 
 .slogan-text {
@@ -285,5 +286,10 @@
 .mobile-bordered {
     margin-left:5px;
     width:95%;
+}
+
+.redtext {
+    color:rgb(255, 0, 0);
+    text-decoration:underline
 }
 
