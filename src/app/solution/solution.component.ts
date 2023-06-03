@@ -8,7 +8,7 @@ import { ApplicationStateService } from '../application-state.service';
 })
 export class SolutionComponent {
 
-  info: String = "Experience what thermochemical energy storage has to offer to your home or building.";
+  info: String = "Experience what thermochemical energy storage has to offer to your home or building. Disclaimer: this tool is not yet functional.";
 
   public isMobileResolution: boolean;
 

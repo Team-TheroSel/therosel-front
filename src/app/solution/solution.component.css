@@ -75,4 +75,5 @@
 
 .background_img {
     background-image:url("src/assets/Images/house_sketch.png");
+    background-repeat: no-repeat;
 }   
