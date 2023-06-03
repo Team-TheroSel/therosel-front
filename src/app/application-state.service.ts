@@ -19,4 +19,5 @@ export class ApplicationStateService {
   public getIsMobileResolution(): boolean {
     return this.isMobileResolution;
   }
+  
 }
