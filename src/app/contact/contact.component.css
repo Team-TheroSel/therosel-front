@@ -72,15 +72,6 @@
     text-align:center;
 }
 
-
-.box {
-    margin:50px;
-}
-
-.mobilebox {
-    margin:20px;
-}
-
 .original_img {
     position:absolute;
 }
@@ -91,4 +82,13 @@
 
 .original_img:hover {
     opacity:0;
+}
+
+
+.box {
+    margin:50px;
+}
+
+.mobilebox {
+    margin:20px;
 }
