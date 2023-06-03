@@ -15,7 +15,7 @@
         <br>
         <p class="text2">The team</p>
         <br>
-        <table style="width:90vw">
+        <table>
             <tr>
                 <td class="profilebox text">
                     <div class="margin">
@@ -25,6 +25,9 @@
                         </p>
                         <p>
                             {{ info_raoul }}
+                        </p>
+                        <p class="italic">
+                            {{ text_raoul }}
                         </p>
                     </div>
                 </td>
@@ -37,6 +40,9 @@
                         <p>
                             {{ info_jasmine }}
                         </p>
+                        <p class="italic">
+                            {{ text_jasmine }}
+                        </p>
                     </div>
                 </td>
                 <td class="profilebox text">
@@ -47,6 +53,9 @@
                         </p>
                         <p>
                             {{ info_vicky }}
+                        </p>
+                        <p class="italic">
+                            {{ text_vicky }}
                         </p>
                     </div>
                 </td>
@@ -59,6 +68,9 @@
                         <p>
                             {{ info_lars }}
                         </p>
+                        <p class="italic">
+                            {{ text_lars }}
+                        </p>
                     </div>
                 </td>
                 <td class="profilebox text">
@@ -69,6 +81,9 @@
                         </p>
                         <p>
                             {{ info_nipun }}
+                        </p>
+                        <p class="italic">
+                            {{ text_nipun }}
                         </p>
                     </div>
                 </td>
@@ -101,6 +116,9 @@
                         <p>
                             {{ info_raoul }}
                         </p>
+                        <p class="italic">
+                            {{ text_raoul }}
+                        </p>
                     </div>
                 </td>
             </tr>
@@ -113,6 +131,9 @@
                         </p>
                         <p>
                             {{ info_jasmine }}
+                        </p>
+                        <p class="italic">
+                            {{ text_jasmine }}
                         </p>
                     </div>
                 </td>
@@ -127,6 +148,9 @@
                         <p>
                             {{ info_vicky }}
                         </p>
+                        <p class="italic">
+                            {{ text_vicky }}
+                        </p>
                     </div>
                 </td>
             </tr>
@@ -139,6 +163,9 @@
                         </p>
                         <p>
                             {{ info_lars }}
+                        </p>
+                        <p class="italic">
+                            {{ text_lars }}
                         </p>
                     </div>
                 </td>
@@ -153,75 +180,9 @@
                         <p>
                             {{ info_nipun }}
                         </p>
-                    </div>
-                </td>
-            </tr>
-        </table>
-    </div>
-
-    <div class="box" *ngIf = !isMobileResolution>
-        <p class="title">CONTACT INFORMATION</p>
-        <p class="text"> {{ contactline }}</p>
-        <table>
-            <tr>
-                <td class="contactelement">
-                    <div class="symbol">
-                        <img src="assets/Images/email_red.png" alt="email_red" width="100px" class="hover_img">
-                        <a> 
-                            <img src="assets/Images/email_white.png" alt="email_white" width="100px" class="original_img">
-                        </a>
-                    </div>
-                    <div>
-                        teamtherosel@<div class="hiddentext">randomtext</div>gmail.com
-                    </div>
-                </td>
-                <td class="contactelement">
-                    <div class="symbol">
-                        <img src="assets/Images/linkedin_red.png" alt="linkedin_red_large" width="100px" class="hover_img">
-                        <a href="https://www.linkedin.com/company/therosel/" target="_blank">
-                            <img src="assets/Images/linkedin_white.png" alt="linkedin_white_large" width="100px" class="original_img">
-                        </a>
-                    </div>
-                    
-                    <div>
-                        TheroSel
-                    </div>
-                </td>
-            </tr>
-            <tr class="contactelement">
-            </tr>
-        </table>
-    </div>
-
-    <div class="mobilebox" *ngIf = isMobileResolution>
-        <p class="mobiletitle">CONTACT INFORMATION</p>
-        <p class="mobiletext">{{ contactline }}</p>
-        <table>
-            <tr>
-                <td>
-                    <div class="centering">
-                        <img src="assets/Images/email_white.png" alt="email_white" width="45%">
-                    </div>
-                    <br>
-                    <div class="mobiletext centering">
-                        teamtherosel@<div class="hiddentext">randomtext</div>gmail.com
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <br>
-                <br>
-            </tr>
-            <tr>
-                <td>
-                    <div class="centering">
-                        <a href="https://www.linkedin.com/company/therosel/" target="_blank"    >
-                            <img src="assets/Images/linkedin_white.png" alt="linkedin_white" width="40%">
-                        </a>
-                    </div>
-                    <br>
-                    <div class="mobiletext centering">
-                        TheroSel
+                        <p class="italic">
+                            {{ text_nipun }}
+                        </p>
                     </div>
                 </td>
             </tr>

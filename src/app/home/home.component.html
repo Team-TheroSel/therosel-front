@@ -41,10 +41,10 @@
                         <a class= "button" routerLink="/technology" routerLinkActive="active" ariaCurrentWhenActive="page">TECHNOLOGY</a>
                     </td>
                     <td>
-                        <a class="button" routerLink="/solution" routerLinkActive="active" ariaCurrentWhenActive="page">YOUR SOLUTION</a>
+                        <a class="button" routerLink="/solution" routerLinkActive="active" ariaCurrentWhenActive="page">FUTURE</a>
                     </td>
                     <td>
-                        <a class="button" routerLink="/contact" routerLinkActive="active" ariaCurrentWhenActive="page" href="">FAQ</a>
+                        <a class="button" routerLink="/about-us" routerLinkActive="active" ariaCurrentWhenActive="page" href="">FAQ</a>
                     </td>
                 </table>
                 <br>
@@ -66,34 +66,14 @@
                 <div class="text">
                     {{ news_affordable_heat_pumps }} <a href="https://www.linkedin.com/feed/update/urn:li:activity:7030647874866544640" class="redtext" target="blank">→ See on LinkedIn</a>
                 </div>
-                <!-- <div class="centering">
+                <div class="centering">
                     <img src="https://media.licdn.com/dms/image/sync/D4E27AQEUYuwGcBCz3g/articleshare-shrink_800/0/1683629904508?e=1685311200&v=beta&t=G1Ypmo1an79EEC5ZoaZ2PA312eNPGPV1ubMd-SodnXA" width="700px">
-                </div> -->
-                <br>
+                </div>
                 <p class="date">January 12, 2023</p>
                 <p class="title">FUTURE OF BUILDING TECHNOLOGY: 2023 AND BEYOND</p>
                 <div class="text">
                     {{ news_future_building_technology }} <a href="https://www.linkedin.com/feed/update/urn:li:activity:7019251928878456832" class="redtext" target="blank">→ See on LinkedIn</a>
                 </div>
-                <br>
-                <p class="date">January 3, 2023</p>
-                <p class="title">SOLAR-TO-X, FUTURE OF EUROPE</p>
-                <div class="text">
-                    {{ news_lappeenranta_university }} <a href="https://www.linkedin.com/feed/update/urn:li:activity:7016119906282668033" class="redtext" target="blank">→ See on LinkedIn</a>
-                </div>
-                <br>
-                <p class="date">December 28, 2023</p>
-                <p class="title">RONDO HEAT BATTERY</p>
-                <div class="text">
-                    {{ news_rondo_energy }} <a href="https://www.linkedin.com/feed/update/urn:li:activity:7013969484457590784" class="redtext" target="blank">→ See on LinkedIn</a>
-                </div>
-                <br>
-                <p class="date">December 18, 2023</p>
-                <p class="title">STORING HEAT IN SAND</p>
-                <div class="text">
-                    {{ news_sand_battery }} <a href="https://www.linkedin.com/feed/update/urn:li:activity:7013969484457590784" class="redtext" target="blank">→ See on LinkedIn</a>
-                </div>
-                <br>
             </div>
         </div>
     </div>
@@ -144,7 +124,7 @@
                         <a class="mobile-button" routerLink="/solution" routerLinkActive="active" ariaCurrentWhenActive="page">FUTURE</a>
                     </td>
                     <td>
-                        <a class="mobile-button" routerLink="/contact" routerLinkActive="active" ariaCurrentWhenActive="page" href="">FAQ</a>
+                        <a class="mobile-button" routerLink="/about-us" routerLinkActive="active" ariaCurrentWhenActive="page" href="">FAQ</a>
                     </td>
                 </table>
                 <br>
@@ -154,44 +134,10 @@
         <div id="page-2-mobile">
             <p class="mobilenews">RECENT ARTICLES</p>
             <p class="mobiledate">February 23, 2023</p>
-            <p class="mobiletitle">WELCOME TO OUR NEW WEBSITE</p>
+            <p class="mobiletitle" [ngClass] = "{'mobiletitle': isMobileResolution}">WELCOME TO OUR NEW WEBSITE</p>
             <p class="mobiletext">
                 {{ news1 }}
             </p>
-            <br>
-                <p class="mobiledate">February 12, 2023</p>
-                <p class="mobiletitle">AFFORDABLE HEAT PUMPS FOR A SUSTAINABLE FUTURE</p>
-                <div class="mobiletext">
-                    {{ news_affordable_heat_pumps }} <a href="https://www.linkedin.com/feed/update/urn:li:activity:7030647874866544640" class="redtext" target="blank">→ See on LinkedIn</a>
-                </div>
-                <!-- <div class="centering">
-                    <img src="https://media.licdn.com/dms/image/sync/D4E27AQEUYuwGcBCz3g/articleshare-shrink_800/0/1683629904508?e=1685311200&v=beta&t=G1Ypmo1an79EEC5ZoaZ2PA312eNPGPV1ubMd-SodnXA" width="700px">
-                </div> -->
-                <br>
-                <p class="mobiledate">January 12, 2023</p>
-                <p class="mobiletitle">FUTURE OF BUILDING TECHNOLOGY: 2023 AND BEYOND</p>
-                <div class="mobiletext">
-                    {{ news_future_building_technology }} <a href="https://www.linkedin.com/feed/update/urn:li:activity:7019251928878456832" class="redtext" target="blank">→ See on LinkedIn</a>
-                </div>
-                <br>
-                <p class="mobiledate">January 3, 2023</p>
-                <p class="mobiletitle">SOLAR-TO-X, FUTURE OF EUROPE</p>
-                <div class="mobiletext">
-                    {{ news_lappeenranta_university }} <a href="https://www.linkedin.com/feed/update/urn:li:activity:7016119906282668033" class="redtext" target="blank">→ See on LinkedIn</a>
-                </div>
-                <br>
-                <p class="mobiledate">December 28, 2023</p>
-                <p class="mobiletitle">RONDO HEAT BATTERY</p>
-                <div class="mobiletext">
-                    {{ news_rondo_energy }} <a href="https://www.linkedin.com/feed/update/urn:li:activity:7013969484457590784" class="redtext" target="blank">→ See on LinkedIn</a>
-                </div>
-                <br>
-                <p class="mobiledate">December 18, 2023</p>
-                <p class="mobiletitle">STORING HEAT IN SAND</p>
-                <div class="mobiletext">
-                    {{ news_sand_battery }} <a href="https://www.linkedin.com/feed/update/urn:li:activity:7013969484457590784" class="redtext" target="blank">→ See on LinkedIn</a>
-                </div>
-                <br>
         </div>
     </div>
     <app-bottom></app-bottom>
