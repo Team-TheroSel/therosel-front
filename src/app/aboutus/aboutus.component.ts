@@ -34,6 +34,8 @@ export class AboutusComponent {
 
   text_lars: String = "'I want to live in a world where sustainability is at the heart of everything we do, and our actions reflect our commitment to creating a greener, healthier, and more equitable future for all.'";
 
+  contactline: String = "Feel free to contact us via any of the means below.";
+
   constructor(private applicationStateService: ApplicationStateService) {
     this.isMobileResolution = 
     applicationStateService.getIsMobileResolution();
