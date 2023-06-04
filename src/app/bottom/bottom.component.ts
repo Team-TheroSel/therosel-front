@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ApplicationStateService } from '../application-state.service';
 
 @Component({
   selector: 'app-bottom',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class BottomComponent {
 
+  public isMobileResolution: boolean;
+
+  constructor(private applicationStateService: ApplicationStateService) {
+    this.isMobileResolution = applicationStateService.getIsMobileResolution();
+  }
 }
