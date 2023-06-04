@@ -1,6 +1,6 @@
 <div class="spacer"></div>
 
-<div class="blackbox">
+<div class="blackbox" *ngIf = !isMobileResolution>
     <table class="tableclass">
         <tr>
             <td  class="blackbox_title">FOLLOW US</td>
@@ -43,6 +43,33 @@
                 <img src = 'assets/Images/Goal12Red.png' alt="linkedin_red" width="80px" class="hover_img">
                 <a href="https://sdgs.un.org/goals/goal12" target="_blank">
                     <img src = 'assets/Images/Goal12White.png' alt="linkedin_white" width="80px" class="original_img">
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td class="blackbox_small">© 2023 Team TheroSel</td>
+        </tr>
+    </table>
+</div>
+
+<div class="blackbox" *ngIf = isMobileResolution>
+    <table class="tableclass">
+        <tr>
+            <td  class="blackbox_title">FOLLOW US</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="blackbox_component logo">
+                <img src = 'assets/Images/instagram_red.png' alt="instagram_red" width="50px" class="hover_img">
+                <a href="https://instagram.com/therosel_tue/" target="_blank">
+                    <img src = 'assets/Images/instagram_white.png' alt="instagram_white" width="50px" class="original_img">
+                </a>
+            </td>
+            <td class="blackbox_component logo">
+                <img src = 'assets/Images/linkedin_red.png' alt="linkedin_red" width="50px" class="hover_img">
+                <a href="https://www.linkedin.com/company/therosel/" target="_blank">
+                    <img src = 'assets/Images/linkedin_white.png' alt="linkedin_white" width="50px" class="original_img">
                 </a>
             </td>
         </tr>

@@ -4,18 +4,14 @@
     <div class="box" *ngIf = !isMobileResolution>
         <p class="title">THE TECHNOLOGY</p>
         <p class="date">Basic principle</p>
-        <p class="text">
-            {{ basic_principle }}
-        </p>
+        <p class="text">{{ basic_principle }}</p>
         <p class="date">Technical details</p>
-        <p class="text">
-            {{ technological_details }}
-        </p>
+        <p class="text">{{ technological_details }}</p>
         <div class="text">
-            <p class="underline">Dehydration reaction:</p> {{ dehydration_reaction }}
+            <p class="underline">Dehydration reaction:</p>{{ dehydration_reaction }}
         </div>
         <div class="text">
-            <p class="underline">Hydration reaction:</p> {{ hydration_reaction }}
+            <p class="underline">Hydration reaction:</p>{{ hydration_reaction }}
         </div>
         <!-- <p  class="centered_img">
             <img src = "assets/Images/operating_principle.png" alt="operating_principle" width="100%" class="image_border">
@@ -179,7 +175,7 @@
         <div style="height:150px">
         </div>
 
-        <p class="date">Other types of heat storage</p>
+        <!-- <p class="date">Other types of heat storage</p>
         <p class="text">
             {{ types_storage }}
         </p>
@@ -190,54 +186,45 @@
         <div class="text">
             <p class="underline">Latent heat storage (LHS):</p> {{ lhs }}
         </div>
+        <br> -->
+
+        <p class="date">What are some of the advantages of thermochemical heat storage?</p>
+        <p class="text">{{ advantages }}</p>
         <br>
-
-        <div class="text">
-            <p class="underline">Possible heat sources:</p> {{ sources }}
-        </div>
-
-        <div class="text">
-            <p class="underline">Possible heat uses:</p> {{ uses }}
-        </div>
-
-        <p class="date">What are some of the remaining advantages of thermochemical heat storage?</p>
-        <p class="text"> {{ advantages }}</p>
-
+        <br>
+        <p class="date"> How can heat batteries be used in society?</p>
+        <p class="text">{{ use_society }}</p>
+        <br>
+        <br>
         <p class="date">What does the future of thermochemical heat storage look like?</p>
-        <p class="text">
-            {{ future }}
-        </p>
+        <p class="text">{{ future }}</p>
 
     </div>
 
     <div class="mobilebox" *ngIf = isMobileResolution>
         <p class="mobiletitle">THE TECHNOLOGY</p>
         <p class="mobiledate">Basic principle</p>
-        <p class="mobiletext">
-            {{ basic_principle }}
-        </p>
+        <p class="mobiletext">{{ basic_principle }}</p>
         <p class="mobiledate">Technical details</p>
-        <p class="mobiletext">
-            {{ technological_details }}
-        </p>
+        <p class="mobiletext">{{ technological_details }}</p>
         <div class="mobiletext">
-            <p class="underline">Dehydration reaction:</p> {{dehydration_reaction }}
+            <p class="underline">Dehydration reaction:</p>{{dehydration_reaction }}
         </div>
         <div class="mobiletext">
-            <p class="underline">Hydration reaction:</p> {{ hydration_reaction }}
+            <p class="underline">Hydration reaction:</p>{{ hydration_reaction }}
         </div>
         <br>
-        <i class="mobiletext">Open in desktop view to see animations </i>
-        <br>
+        <i class="mobiletext">Open in desktop view to see animations</i>
         <!-- <p  class="mobile_centered_img">
             <img src = "assets/Images/operating_principle.png" alt="operating_principle" width="100%" class="image_border">
         </p> -->
-
-        <p class="mobiledate">Other types of heat storage</p>
+        <br>
+        <br>
+        <!-- <p class="mobiledate">Other types of heat storage</p>
         <p class="mobiletext">
             {{ types_storage }}
-        </p>
-        <div class="mobiletext">
+        </p> -->
+        <!-- <div class="mobiletext">
             <p class="underline">Sensible heat storage (SHS)</p> 
             {{ shs }}
         </div>
@@ -245,22 +232,18 @@
             <p class="underline">Latent heat storage (LHS):</p> {{ lhs }}
         </div>
         <br>
+        <br> -->
 
-        <div class="mobiletext">
-            <p class="underline">Possible heat sources:</p> {{ sources }}
-        </div>
-
-        <div class="mobiletext">
-            <p class="underline">Possible heat uses:</p> {{ uses }}
-        </div>
-
-        <p class="mobiledate">What are some of the remaining advantages of thermochemical heat storage?</p>
-        <p class="mobiletext"> {{ advantages }}</p>
-
+        <p class="mobiledate">What are some of the advantages of thermochemical heat storage?</p>
+        <p class="mobiletext">{{ advantages }}</p>
+        <br>
+        <br>
+        <p class="mobiledate"> How can heat batteries be used in society?</p>
+        <p class="mobiletext">{{ use_society }}</p>
+        <br>
+        <br>
         <p class="mobiledate">What does the future of thermochemical heat storage look like?</p>
-        <p class="mobiletext">
-            {{ future }}
-        </p>
+        <p class="mobiletext">{{ future }}</p>
 
     </div>
 
