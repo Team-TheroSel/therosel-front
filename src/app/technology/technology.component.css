@@ -131,6 +131,10 @@
     margin-left:-50px;
 }
 
+.filter-white {
+    filter: invert(100%) sepia(0%) saturate(7492%) hue-rotate(301deg) brightness(100%) contrast(103%);
+}
+
 @keyframes disappear {
     0% {
         color:white;

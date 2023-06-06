@@ -28,6 +28,10 @@ export class HomeComponent {
     
   }
 
+  topFunction(){
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
+  }
+
   scrollDown(): void {
     document.getElementById("page-1")?.scrollIntoView({behavior:"smooth"})
   }

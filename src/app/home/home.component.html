@@ -1,7 +1,7 @@
 <body>
     <app-navigationbar></app-navigationbar>
 
-    <div class="box" *ngIf = !isMobileResolution>
+    <div class="box" *ngIf = !isMobileResolution id = "top">
         <div class="small-spacer"></div>
         <div class="typewriter">
             <div class="container">
@@ -33,18 +33,18 @@
                 <br>
                 <p class="title"> Explore what heat batteries have to offer</p>
                 <br>
-                <p class="bordered text"> Explore what heat batteries have to offer by reading about how the technology works, seeing what the future holds for heat batteries, and some of the answers to frequently asked questions on heat battery technology.</p>
+                <p class="bordered text"> Explore what heat batteries have to offer by reading about how the technology works, seeing what heat batteries can offer you, and some of the answers to frequently asked questions on heat battery technology.</p>
                 <br>
                 <br>
                 <table class="center_table">
                     <td>
-                        <a class= "button" routerLink="/technology" routerLinkActive="active" ariaCurrentWhenActive="page">TECHNOLOGY</a>
+                        <a (click)="topFunction()" class= "button" href="#top" routerLink="/technology" routerLinkActive="active" ariaCurrentWhenActive="page">TECHNOLOGY</a>
                     </td>
                     <td>
-                        <a class="button" routerLink="/solution" routerLinkActive="active" ariaCurrentWhenActive="page">YOUR SOLUTION</a>
+                        <a (click)="topFunction()" class="button" routerLink="/solution" routerLinkActive="active" ariaCurrentWhenActive="page">YOUR SOLUTION</a>
                     </td>
                     <td>
-                        <a class="button" routerLink="/contact" routerLinkActive="active" ariaCurrentWhenActive="page" href="">FAQ</a>
+                        <a (click)="topFunction()" class="button" routerLink="/faq" routerLinkActive="active" ariaCurrentWhenActive="page" href="">FAQ</a>
                     </td>
                 </table>
                 <br>
@@ -134,17 +134,17 @@
                 <br>
                 <p class="mobiletitle"> Explore what heat batteries have to offer</p>
                 <br>
-                <p class="mobile-bordered mobiletext"> Explore what heat batteries have to offer by reading about how the technology works, seeing what the future holds for heat batteries, and some of the answers to frequently asked questions on heat battery technology.</p>
+                <p class="mobile-bordered mobiletext"> Explore what heat batteries have to offer by reading about how the technology works, seeing what heat batteries can offer you, and some of the answers to frequently asked questions on heat battery technology.</p>
 
                 <table class="center_table">
                     <td>
-                        <a class= "mobile-button" routerLink="/technology" routerLinkActive="active" ariaCurrentWhenActive="page">TECHNOLOGY</a>
+                        <a (click)="topFunction()" class= "mobile-button" routerLink="/technology" routerLinkActive="active" ariaCurrentWhenActive="page">TECHNOLOGY</a>
                     </td>
                     <td>
-                        <a class="mobile-button" routerLink="/solution" routerLinkActive="active" ariaCurrentWhenActive="page">FUTURE</a>
+                        <a (click)="topFunction()" class="mobile-button" routerLink="/solution" routerLinkActive="active" ariaCurrentWhenActive="page">YOUR SOLUTION</a>
                     </td>
                     <td>
-                        <a class="mobile-button" routerLink="/contact" routerLinkActive="active" ariaCurrentWhenActive="page" href="">FAQ</a>
+                        <a (click)="topFunction()" class="mobile-button" routerLink="/faq" routerLinkActive="active" ariaCurrentWhenActive="page" href="">FAQ</a>
                     </td>
                 </table>
                 <br>
